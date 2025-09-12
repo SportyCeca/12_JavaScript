@@ -1,0 +1,67 @@
+#elsocont{
+    display: flex;
+    background-color: yellow;
+    height: 300px;
+    width: 800px;
+}
+.container{
+    display: flex;
+    background-color: yellow;
+    height: 400px;
+    width: 100%;
+
+}
+#zolddiv, #sargadiv, #liladiv{
+    height: 100px;
+    width: 100px;
+}
+
+#elsocont>div:nth-child(1){
+    background-color: green;
+    display: none;
+}
+#elsocont>div:nth-child(2){
+    background-color: yellow;
+    display: none;
+}
+#liladiv{
+    background-color: purple;
+    align-self: center;
+    margin: 0 auto;
+}
+li{
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    list-style: none;
+}
+#masodikcont ul{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#masodikcont, #harmadikcont{
+    align-items: center;
+}
+#masodikcont li{
+    margin-right:10px;
+}
+#harmadikcont ul{
+    display:flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#negyedikcont{
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end;     
+}
+#negyedikcont ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+
+}
