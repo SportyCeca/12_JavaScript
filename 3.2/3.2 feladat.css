@@ -1,0 +1,43 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#navbar {
+  display: flex;
+  justify-content: flex-start;
+  gap:20px;
+  background-color: purple;
+  padding-left: 100px;
+  height: 100px;
+  align-items: center;
+}
+.navelem {
+  width: 100px;
+  height: 50px;
+  background-color: cyan;
+}
+#main {
+  display: flex;
+  flex: 1;
+  margin-top: 5px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+#zold {
+  flex:1;
+  background-color: green;
+}
+#sarga {
+  flex: 2;
+  background-color: yellow;
+  margin: 10px;
+}
+#footer {
+  height: 80px;
+  background-color: gray;
+  width: 90vw;
+  align-self: center;
+  margin-top: 10px;
+}

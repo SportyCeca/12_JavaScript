@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    width: 100vw;
+    height: 100vh;
+}
+#navbar {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    background-color: purple;
+    padding: 10px;
+    
+}
+.navelem {
+    width: 80px;
+    height: 30px;
+    background-color: cyan;
+    margin-left: 10px;
+}
+#main {
+    display:flex;
+    flex: 1; 
+}
+#sarga {
+    flex:2;
+    background-color: yellow;
+}
+#zold {
+    flex:1; 
+    background-color: green;
+}
