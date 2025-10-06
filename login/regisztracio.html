@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regisztracio.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Login</h2>
+        <label for="email">E-mail cím</label>
+        <br>
+        <input type="text" id="email">
+        <br>
+        <label for="jelszo">Jelszó</label>
+        <br>
+        <input type="password" id="jelszo">
+        <br>
+        <label for="rejelszo">Jelszó újra</label>
+        <br>
+        <input type="password" id="rejelszo"><br>
+        <button id="button">Login</button>
+    </div>
+
+    <script>
+        const button = document.getElementById("button");
+        button.addEventListener("click", () => {
+        const email = document.getElementById("email").value;
+        const jelszo = document.getElementById("jelszo").value;
+        const rejelszo = document.getElementById("rejelszo").value;
+            if (email == ""){
+                alert("Kérem adja meg az email címet!")
+            }
+            else if (!email.includes('@') || !email.includes('.') || email.split(".").at(-1).length > 3 || email.split(".").at(-1).length < 2){
+                alert("Az email cím formátuma hibás, kérem érvényes emailt adjon meg!")
+            }
+            else if (jelszo == "" && rejelszo == ""){
+                alert("Adjon meg jelszót!")
+            }
+            else if ((jelszo != "" && rejelszo == "")|| (jelszo == "" && rejelszo != "")){
+                alert("Kérem a jelszót mindkét mezőben adja meg!")
+            }
+            else if (jelszo != rejelszo){
+                alert("Hibás jelszó!")
+            }
+            else{
+                alert("Sikeres regisztráció!")
+            }
+        })
+    </script>
+</body>
+</html>
